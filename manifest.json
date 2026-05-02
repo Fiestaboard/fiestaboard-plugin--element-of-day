@@ -1,0 +1,83 @@
+{
+  "id": "element_of_day",
+  "name": "Element of the Day",
+  "version": "0.1.0",
+  "description": "Display a periodic table element that changes daily.",
+  "author": "FiestaBoard Team",
+  "icon": "atom",
+  "category": "utility",
+  "repository": "https://github.com/Fiestaboard/fiestaboard-plugin--element-of-day",
+  "documentation": "README.md",
+  "min_refresh_seconds": 3600,
+  "settings_schema": {
+    "type": "object",
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "title": "Enabled",
+        "default": false
+      },
+      "refresh_seconds": {
+        "type": "integer",
+        "title": "Refresh Interval (seconds)",
+        "description": "How often to refresh (once per day is sufficient).",
+        "default": 3600,
+        "minimum": 3600
+      }
+    },
+    "required": []
+  },
+  "variables": {
+    "groups": {
+      "element": {
+        "label": "Element"
+      }
+    },
+    "simple": {
+      "element_name": {
+        "description": "Element name",
+        "type": "string",
+        "max_length": 15,
+        "group": "element",
+        "example": "Hydrogen"
+      },
+      "symbol": {
+        "description": "Element symbol",
+        "type": "string",
+        "max_length": 3,
+        "group": "element",
+        "example": "H"
+      },
+      "atomic_number": {
+        "description": "Atomic number",
+        "type": "integer",
+        "max_length": 4,
+        "group": "element",
+        "example": "1"
+      },
+      "atomic_weight": {
+        "description": "Standard atomic weight",
+        "type": "string",
+        "max_length": 8,
+        "group": "element",
+        "example": "1.008"
+      },
+      "category": {
+        "description": "Element category (e.g. nonmetal, noble gas)",
+        "type": "string",
+        "max_length": 18,
+        "group": "element",
+        "example": "nonmetal"
+      }
+    }
+  },
+  "screenshots": [
+    {
+      "src": "docs/board-display.png",
+      "alt": "Element of the Day displayed on a Vestaboard",
+      "caption": "Example board output using the default template",
+      "primary": true
+    }
+  ],
+  "api_docs": "https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest"
+}
