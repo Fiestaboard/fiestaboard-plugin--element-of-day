@@ -1,7 +1,7 @@
 {
   "id": "element_of_day",
   "name": "Element of the Day",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Display a periodic table element that changes daily.",
   "author": "FiestaBoard Team",
   "icon": "atom",
@@ -79,5 +79,47 @@
       "primary": true
     }
   ],
-  "api_docs": "https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest"
+  "api_docs": "https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest",
+  "demo": {
+    "name": "Element of the Day Demo",
+    "device_type": "flagship",
+    "config": {
+      "enabled": true,
+      "refresh_seconds": 3600
+    },
+    "template": [
+      "Element of the Day",
+      "",
+      "{{element_of_day.element_name}} ({{element_of_day.symbol}})",
+      "Atomic No: {{element_of_day.atomic_number}}",
+      "Weight:    {{element_of_day.atomic_weight}}",
+      "{{element_of_day.category}}"
+    ],
+    "line_metadata": [
+      {
+        "alignment": "center",
+        "wrap": false
+      },
+      {
+        "alignment": "left",
+        "wrap": false
+      },
+      {
+        "alignment": "center",
+        "wrap": false
+      },
+      {
+        "alignment": "left",
+        "wrap": false
+      },
+      {
+        "alignment": "left",
+        "wrap": false
+      },
+      {
+        "alignment": "center",
+        "wrap": false
+      }
+    ]
+  }
 }
