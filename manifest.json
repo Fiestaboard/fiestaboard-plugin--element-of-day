@@ -1,7 +1,7 @@
 {
   "id": "element_of_day",
   "name": "Element of the Day",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Display a periodic table element that changes daily.",
   "author": "FiestaBoard Team",
   "icon": "atom",
