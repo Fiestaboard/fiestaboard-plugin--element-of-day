@@ -95,9 +95,9 @@
     {
       "device_type": "note",
       "rows": [
-        "Hydrogen",
-        "SYM H",
-        "AT# 1"
+        "{68}{68} HYDROGEN",
+        "SYMBOL H  NO. 1",
+        "PERIOD 1 GAS"
       ]
     }
   ],
