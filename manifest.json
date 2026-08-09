@@ -79,6 +79,28 @@
       "primary": true
     }
   ],
+  "teaser": "H - HYDROGEN",
+  "previews": [
+    {
+      "device_type": "flagship",
+      "rows": [
+        "  Element of the Day",
+        "",
+        "     Hydrogen (H)",
+        "Atomic No: 1",
+        "Weight:    1.008",
+        "       nonmetal"
+      ]
+    },
+    {
+      "device_type": "note",
+      "rows": [
+        "{68}{68} HYDROGEN",
+        "SYMBOL H  NO. 1",
+        "PERIOD 1 GAS"
+      ]
+    }
+  ],
   "api_docs": "https://pubchemdocs.ncbi.nlm.nih.gov/pug-rest",
   "demo": {
     "flagship": {
